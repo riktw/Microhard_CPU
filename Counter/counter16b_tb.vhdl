@@ -11,13 +11,13 @@ architecture behav of counter16b_tb is
 		port( Load: in std_logic;
 		Clock: in std_logic;
 		Reset: in std_logic;
-		Input: in unsigned(15 downto 0);
-		Output: out unsigned(15 downto 0));
+		Input: in std_logic_vector(15 downto 0);
+		Output: out std_logic_vector(15 downto 0));
 	end component;
 
 	for Counter16B_0: counter16b use entity work.counter16b;
 	signal Load, Clock, Reset : std_logic;
-	signal Input, Output : unsigned(15 downto 0);
+	signal Input, Output : std_logic_vector(15 downto 0);
 
 	begin
 
@@ -27,7 +27,7 @@ architecture behav of counter16b_tb is
 
 			type pattern_type is record
 				Load, Reset : std_logic;
-				Input, Output : unsigned(15 downto 0);
+				Input, Output : std_logic_vector(15 downto 0);
 			end record;
 
 			type pattern_array is array (natural range <>) of pattern_type;
