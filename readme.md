@@ -3,3 +3,4 @@ This repository will contain some game spoilers, but no copypaste solutions for 
 
 I will try to keep the VHDL in the same style as the MRHD code, so as much stuff build from logic gates, even if it makes the code larger then needed. 
 
+The MHRD game can be bought on steam here: http://store.steampowered.com/app/576030 and is highly recommended. To fully understand everything in this repo it's probably best to have played MRHD first, so please give it a go :)
