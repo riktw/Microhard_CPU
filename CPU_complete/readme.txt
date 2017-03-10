@@ -27,6 +27,7 @@ mov = add, 0, src, dst
 
 With just 11 instructions it is a very minimal CPU. But as it can operate directly on RAM it's still a complex instruction set CPU :)
 
+A side effect of using synchronous ram and rom is that a NOP instruction is needed after every jump, with async ram and rom this is not the case.
 
 
 Included ROMs:
