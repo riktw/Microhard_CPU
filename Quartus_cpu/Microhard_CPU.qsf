@@ -1,0 +1,84 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+# Date created = 21:01:59  March 10, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Microhard_CPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6E22A7
+set_global_assignment -name TOP_LEVEL_ENTITY cputop
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:01:59  MARCH 10, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 125
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE roms.vhdl
+set_global_assignment -name VHDL_FILE reg16.vhdl
+set_global_assignment -name VHDL_FILE ram.vhdl
+set_global_assignment -name VHDL_FILE mux16b.vhdl
+set_global_assignment -name VHDL_FILE gpio.vhdl
+set_global_assignment -name VHDL_FILE decoder.vhdl
+set_global_assignment -name VHDL_FILE cputop.vhdl
+set_global_assignment -name VHDL_FILE cpu.vhdl
+set_global_assignment -name VHDL_FILE counter16b.vhdl
+set_global_assignment -name VHDL_FILE alu16b.vhdl
+set_global_assignment -name VHDL_FILE adder16b.vhdl
+set_global_assignment -name VHDL_FILE adder.vhdl
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_25 -to clock
+set_location_assignment PIN_75 -to reset
+set_location_assignment PIN_138 -to gpio_out[0]
+set_location_assignment PIN_141 -to gpio_out[1]
+set_location_assignment PIN_142 -to gpio_out[2]
+set_global_assignment -name QIP_FILE pll.qip
+set_location_assignment PIN_143 -to gpio_out[3]
+set_location_assignment PIN_144 -to gpio_out[4]
+set_location_assignment PIN_1 -to gpio_out[5]
+set_location_assignment PIN_2 -to gpio_out[6]
+set_location_assignment PIN_3 -to gpio_out[7]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
